@@ -1,0 +1,148 @@
+/* Mobile & Table */
+@media (max-width: 1023px) {}
+
+/* Table */
+@media (min-width: 740px) and (max-width: 1023px) {}
+
+/* Table Lanscape */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {}
+
+/* Mobile */
+
+@media (max-width: 739px) {
+    .homeinfo-wrapper {
+        padding: 25px 0;
+    }
+
+    .view-more {
+        margin: 20px 0;
+    }
+
+
+    .homeservice-wrapper {
+        padding: 40px 0;
+    }
+
+    .homecat-title, .homecat-title--spc {
+        font-size: 22px;
+    }
+
+    .homeservice-item__name {
+        padding: 15px 8px;
+        font-size: 14px;
+    }
+
+    .homeduan-wrapper {
+        padding: 35px 0;
+    }
+
+    .homeduan-item {
+        width: 50%;
+    }
+
+    .homecat-intro {
+        margin-bottom: 25px;
+    }
+
+
+    .footer-block {
+        padding-left: 0;
+    }
+
+    .footer-main {
+        padding: 35px 0 20px;
+    }
+
+    .footer-title {
+        font-size: 16px;
+    }
+
+    .logo-footer {
+        max-width: 150px;
+        margin-bottom: 20px;
+    }
+
+    .title-page {
+        font-size: 22px;
+    }
+    .homenews-wrapper .grid-container {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    .homenews-wrapper .homenews-item:nth-child(1) {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .slidehome .desc
+    {
+        width: 90%;
+        transform: translate(-50%, -50%);
+    }
+    .slidehome img{
+        height: 300px;
+        object-fit: cover;
+    }
+    .desc h2
+    {
+        font-size: 20px;
+    }
+    .homecat-title--spc a
+    {
+        font-size: 25px;
+    }
+    .homeproject-wrapper [class*='cell-'] {
+        padding: 3px;
+    }
+    
+    .homeproject-item
+    {
+        height: 90px;
+    }    
+    #slide_home .swiper-pagination {
+        bottom: 15px;
+    }
+    .banner::after
+    {
+        height: 30%;
+    }
+    .link-details
+    {
+        display: inline-block;
+    }
+    .tab-title
+    {margin: 5px;}
+    .footer{
+        background-image: linear-gradient(90deg, #00af97 0%, #005585 100%);
+        
+    }
+    .footer-main{
+        padding: 0;
+    }
+    .fancybox-content{
+        padding:40px 15px!important;
+    }
+
+    .aboutpersonnel-detail_img{
+        width: 100%;
+    }
+    .boutpersonnel-detail_content{
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+/* Ipad pro */
+
+
+@media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
+
+
+/* PC LARGE */
+
+@media (min-width: 1919px) {
+    .grid {
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+}
