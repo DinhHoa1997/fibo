@@ -289,16 +289,29 @@
                                         <span>*</span> <input type="text" placeholder="Điện thoại">
                                         </div>
                                         <div class="item">
-                                          <span></span> <input type="text" placeholder="Địa chỉ">
+                                          <span></span><input type="text" placeholder="Địa chỉ">
                                         </div>
                                         <div class="item">
                                           <span></span> <input type="text" placeholder="Email">
                                         </div>
                                         <div class="item">
-                                          <span>*</span> <input type="file" placeholder="Họ tên">
-                                          <label for="f02">Add profile picture</label>
+                                          <span>*</span> <input type="file" id="file" />
+                                          <label for="file" class="btn-smfile"> <img src="/images/upload.png" alt=""> Tải CV lên</label>
+                                          <small>(Định dạng: .doc, .docx, .pdf, .xls, .xlsx; <=5MB)</small>
+                                        </div>
+                                        <div class="item gender">
+                                             Giới tính
+                                            <div class="check">
+                                                <input type="radio" id="f-option" checked name="selector">
+                                                <label for="f-option">Nam</label> 
+                                            </div>
+                                            <div class="check">
+                                                <input type="radio" id="s-option" name="selector">
+                                                <label for="s-option">Nữ</label>
+                                            </div>
                                         </div>
                                     </div>
+                                    <button>Nộp CV</button>
                                 </form>
                               
                               </div>

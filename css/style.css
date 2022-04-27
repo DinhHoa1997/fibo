@@ -1999,8 +1999,8 @@ article-prev {
   position: absolute;
   bottom: 50px;
   right: 0%;
-  width: 14%;
-  height: 53%;
+  width: 190px;
+  height: 350px;
   background: transparent url(/uploaded/ico/logocut1.png);
   background-size: cover;
   background-position: center;
@@ -2939,14 +2939,75 @@ article-prev {
   .recruit-detail b {
     font-weight: 600; }
 
-.formungtuyen input {
-  width: 100%;
+.formungtuyen input, .formungtuyen label {
+  width: 90%;
   padding: 15px;
-  font-size: 15px; }
+  font-size: 15px;
+  height: 50px; }
 .formungtuyen .item {
   display: flex;
+  flex-wrap: wrap;
   width: 50%;
   padding: 10px; }
   .formungtuyen .item span {
     width: 20px;
     color: red; }
+  .formungtuyen .item small {
+    width: 100%;
+    text-align: center;
+    padding: 10px; }
+.formungtuyen button {
+  width: 43%;
+  margin: 0px 30px;
+  padding: 15px;
+  text-transform: uppercase;
+  background: #17a98a;
+  border: navajowhite;
+  border-radius: 5px;
+  color: #FFF;
+  font-weight: 600;
+  transition: all .5s ease-in-out; }
+  .formungtuyen button:hover {
+    background-color: #005585; }
+
+[type="file"] {
+  height: 0;
+  overflow: hidden;
+  width: 0;
+  display: none; }
+
+[type="file"] + label {
+  background: #E4E4E4;
+  border: none;
+  border-radius: 5px;
+  color: #000;
+  cursor: pointer;
+  font-weight: 600;
+  outline: none;
+  padding: 1rem 50px;
+  position: relative;
+  transition: all 0.3s;
+  vertical-align: middle;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  [type="file"] + label:hover {
+    background-color: #E4E4E4; }
+  [type="file"] + label.btn-smfile {
+    background-color: #E4E4E4;
+    transition: none; }
+  [type="file"] + label img {
+    margin-right: 10px; }
+
+.item.gender {
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: -60px; }
+
+.check {
+  display: flex;
+  align-items: center; }
+  .check input {
+    width: 30px;
+    height: 30px; }
