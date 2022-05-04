@@ -3211,7 +3211,7 @@ text-align: center;
   object-fit: cover;
   height: 100%;
 }
-.portfolio-item:nth-last-child(1){
+.portfolio-item:nth-child(9){
   grid-column: 2/4;
   grid-row: 4/6;
   text-transform: uppercase;
@@ -3519,7 +3519,7 @@ img{
 // tuyển dụng
 .recruitdetail-wrapper
 {
-  padding: 50px;
+  padding: 50px 0px;
   .line{
     width: 100%;
   }
@@ -3641,10 +3641,145 @@ img{
 .check{
   display: flex;
   align-items: center;
+  position: relative;
   input{
    width: 30px;
    height: 30px;
 
   }
+  span.checkmark {
+    position: absolute;
+    top: 13px;
+    left: 2px;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid #17a98a;
+  }
+  .check input:checked ~ .checkmark {
+    background-color: #f5f5f5;
+    border: 1px solid #17a98a;
+}
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+ input:checked ~ .checkmark:after {
+    display: block;
+  }
+  .checkmark:after {
+    top: 6px;
+    left: 6px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #17a98a;
+}
+
+
+}
+.simplePagerContainer 
+{
+  .simplePagerNav:nth-child(1)
+  {
+    display: none;
+  }
+  .simplePagerNav
+  {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    li{
+      width: 40px;
+      height: 40px;
+      border: 1px solid #00ac96;
+      border-radius: 50%;
+      padding: 5px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 600;
+      margin: 10px;
+     
+      transition: all .5s ease-in;
+      a{
+        color: #00ac96;
+      }
+    }
+    .currentPage 
+    {
   
+    background: #00af97;
+    a{
+      color: #FFF;
+    }
+    }
+  }
+}
+// recruit-wrapper
+.recruit-wrapper
+{
+  padding: 50px 0px;
+  .btn-more a
+{
+  padding: 10px 35px;
+  border-radius: 5px;
+  color: #343434;
+  border: 1px solid #00ac96;
+  transition: all .5s ease-in-out;
+  &:hover{
+    background-color: #00ac96;
+    color: #FFF;
+  }
+}
+}
+.row
+{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+  
+  .cell{
+    border: 1px solid #FFF;
+    background-color: #e6e6e6;
+    padding: 10px;
+    
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  
+    a{
+      color: #333;
+      transition: all .5s ease-in-out;
+      font-weight: 600;
+      &:hover{
+        color: #00af97;
+      }
+    }
+    
+  }
+  .cell:nth-child(1)
+  {
+    width: 50%;
+
+  }
+  .cell:nth-child(2), .cell:nth-child(3)
+  
+  {
+    width: 25%;
+  }
+&.row-table
+{
+ .cell{
+  background-color: #00ac96;
+  color: #FFf;
+  text-transform: uppercase;
+  padding: 25px;
+  font-weight: 600;
+ }
+}
+
 }
